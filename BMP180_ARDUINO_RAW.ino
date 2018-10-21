@@ -28,7 +28,7 @@ void loop()
   Serial.print("°C\n");
   Serial.print((T / 10 * 1.8) + 32);
   Serial.print("°F\n");
-  Serial.print(Temp + 273.15);
+  Serial.print(T + 273.15);
   Serial.print("K\n\n");
   delay(500);
 }
