@@ -1,3 +1,9 @@
+/*Written By: Er. Dapinder Singh Virk
+  Email ID: brillosolutions@gmail.com
+  Version: 1.0.0
+  Date: October 21, 2018
+  Outputs: Temperature in °C, °F and Kelvin units.*/
+		   
 #include <Wire.h>
 #include <math.h>
 uint8_t DEV_ADDR = 0x77;
@@ -21,7 +27,9 @@ void loop()
   Serial.print(T / 10);
   Serial.print("°C\n");
   Serial.print((T / 10 * 1.8) + 32);
-  Serial.print("°F\n\n");
+  Serial.print("°F\n");
+  Serial.print(Temp + 273.15);
+  Serial.print("K\n\n");
   delay(500);
 }
 
